@@ -1,0 +1,75 @@
+name: Hodinová aktualizácia katalógu, leteckých údajov a knižnice
+
+on:
+  schedule:
+    - cron: "7 * * * *"      # každú hodinu o hh:07 UTC
+  workflow_dispatch:          # ručné spustenie z karty Actions
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Závislosti
+        run: pip install -r requirements.txt
+
+      - name: Predchádzajúci stav z publikovanej stránky
+        run: |
+          OWNER="$(echo "$GITHUB_REPOSITORY_OWNER" | tr '[:upper:]' '[:lower:]')"
+          SITE="https://${OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          echo "AEROWIKI_SITE=$SITE" >> "$GITHUB_ENV"
+          curl -fsSL "${SITE}data/history.json" -o data/history.json || echo "história ešte neexistuje"
+          curl -fsSL "${SITE}data/catalog.json" -o data/catalog.json || echo "katalóg ešte neexistuje"
+          curl -fsSL "${SITE}data/library.json" -o data/library.json || echo "knižnica ešte neexistuje"
+          # posledné letecké údaje ostanú k dispozícii, ak by niektorý zdroj práve nebol dostupný
+          mkdir -p data/aero
+          for f in meta metar taf sigmet; do curl -fsSL "${SITE}data/aero/${f}.json" -o "data/aero/${f}.json" || true; done
+          # úplný stav NOTAM celého sveta (postupná obnova lokalít medzi behmi)
+          curl -fsSL "${SITE}data/aero/notam_store.json.gz" -o data/aero/notam_store.json.gz || echo "NOTAM store ešte neexistuje"
+
+      - name: Letecké údaje (METAR, TAF, SIGMET, NOTAM, letiská, openAIP)
+        env:
+          OPENAIP_API_KEY: ${{ secrets.OPENAIP_API_KEY }}
+        run: python scripts/build_aero.py
+
+      - name: Spracovanie katalógu a kontrola všetkých vrstiev
+        run: python scripts/build_catalog.py
+
+      - name: Knižnica leteckých zdrojov – kontrola všetkých odkazov
+        run: python scripts/build_library.py
+
+      - name: Príprava stránky
+        run: |
+          mkdir -p _site/data
+          cp index.html app.js aero.js library.js style.css _site/
+          cp data/catalog.js data/catalog.json data/history.json data/library.js data/library.json _site/data/
+          cp -r data/aero _site/data/aero
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
