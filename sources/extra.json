@@ -1,0 +1,2250 @@
+{
+ "_info": "Kurátorské zdroje doplnené ku katalógu OSM Editor Layer Index. Každý zdroj bol overený načítaním testovacej dlaždice (8. 10. 2026). Kontrola beží každú hodinu v scripts/build_catalog.py.",
+ "skip_eli_ids": [
+  "EOXAT2023CLOUDLESS",
+  "EOXAT2024CLOUDLESS",
+  "EOXAT2025CLOUDLESS",
+  "EsriWorldImagery",
+  "EsriWorldImageryClarity",
+  "stamen-terrain-background"
+ ],
+ "licenses": {
+  "eox-nc": {
+   "name": "CC BY-NC-SA 4.0",
+   "url": "https://s2maps.eu/",
+   "open": false
+  },
+  "eox-by": {
+   "name": "CC BY 4.0",
+   "url": "https://s2maps.eu/",
+   "open": true
+  },
+  "nasa": {
+   "name": "NASA EOSDIS – bez obmedzení, s uvedením zdroja",
+   "url": "https://earthdata.nasa.gov/earth-observation-data/data-use-policy",
+   "open": true
+  },
+  "eumetsat": {
+   "name": "EUMETSAT – podmienky EUMETView",
+   "url": "https://view.eumetsat.int/",
+   "open": false
+  },
+  "esri": {
+   "name": "Podmienky Esri",
+   "url": "https://www.esri.com/en-us/legal/terms/full-master-agreement",
+   "open": false
+  },
+  "odbl": {
+   "name": "ODbL 1.0",
+   "url": "https://www.openstreetmap.org/copyright",
+   "open": true
+  },
+  "ccbysa": {
+   "name": "CC BY-SA 3.0",
+   "url": "https://opentopomap.org/about",
+   "open": true
+  },
+  "ccby": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/",
+   "open": true
+  },
+  "pd": {
+   "name": "Public domain",
+   "url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+   "open": true
+  },
+  "aws": {
+   "name": "Terrain Tiles – rôzne otvorené zdroje",
+   "url": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+   "open": true
+  },
+  "gebco": {
+   "name": "GEBCO – voľné použitie s uvedením zdroja",
+   "url": "https://www.gebco.net/data_and_products/gridded_bathymetry_data/",
+   "open": true
+  },
+  "gsi": {
+   "name": "Podmienky GSI Japan (voľné s uvedením zdroja)",
+   "url": "https://maps.gsi.go.jp/development/ichiran.html",
+   "open": true
+  },
+  "etalab": {
+   "name": "Licence Ouverte 2.0",
+   "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+   "open": true
+  },
+  "dlde": {
+   "name": "Datenlizenz Deutschland 2.0",
+   "url": "https://www.govdata.de/dl-de/by-2-0",
+   "open": true
+  },
+  "pdok": {
+   "name": "CC0 / CC BY 4.0 (PDOK)",
+   "url": "https://www.pdok.nl/",
+   "open": true
+  },
+  "nlsc": {
+   "name": "Podmienky NLSC (Taiwan)",
+   "url": "https://maps.nlsc.gov.tw/",
+   "open": null
+  },
+  "cuzk": {
+   "name": "Podmienky ČÚZK",
+   "url": "https://geoportal.cuzk.gov.cz/",
+   "open": null
+  },
+  "eox-terms": {
+   "name": "Podmienky EOX Maps (s uvedením zdroja)",
+   "url": "https://maps.eox.at/",
+   "open": null
+  },
+  "noaa": {
+   "name": "NOAA/NWS – verejná doména",
+   "url": "https://www.weather.gov/disclaimer",
+   "open": true
+  },
+  "faa-notam": {
+   "name": "FAA NOTAM Search – informatívne, nie jediný zdroj predletovej prípravy; polohy stredov FIR z VATSpy Data Project (CC BY-SA 4.0)",
+   "url": "https://notams.aim.faa.gov/notamSearch/",
+   "open": true
+  },
+  "ourairports": {
+   "name": "Public domain (OurAirports)",
+   "url": "https://ourairports.com/data/",
+   "open": true
+  },
+  "openaip": {
+   "name": "CC BY-NC 4.0 (openAIP)",
+   "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "open": false
+  },
+  "ofma": {
+   "name": "OFMA General Users License",
+   "url": "https://www.openflightmaps.org/",
+   "open": null
+  },
+  "swiss-ogd": {
+   "name": "Open Government Data CH – s uvedením zdroja",
+   "url": "https://www.geo.admin.ch/en/general-terms-of-use-fsdi",
+   "open": true
+  },
+  "dipul": {
+   "name": "DIPUL – len nekomerčné použitie, zdroj: DFS, BKG",
+   "url": "https://www.dipul.de/",
+   "open": false
+  },
+  "lps": {
+   "name": "LPS SR, š. p. – verejne publikované služby, podmienky použitia neuvedené",
+   "url": "https://gis.lps.sk/vfrm/index.html",
+   "open": null
+  },
+  "faa": {
+   "name": "FAA – verejná doména (US Government)",
+   "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/",
+   "open": true
+  },
+  "enaire": {
+   "name": "ENAIRE – informatívne, s uvedením zdroja",
+   "url": "https://insignia.enaire.es/",
+   "open": null
+  },
+  "caa-si": {
+   "name": "CAA Slovenija – verejne publikované, podmienky neuvedené",
+   "url": "https://www.caa.si/",
+   "open": null
+  },
+  "rainviewer": {
+   "name": "RainViewer API – bezplatné s uvedením zdroja",
+   "url": "https://www.rainviewer.com/api.html",
+   "open": null
+  }
+ },
+ "layers": [
+  {
+   "id": "eox-s2cloudless-2025",
+   "name": "Sentinel-2 cloudless 2025 (EOX)",
+   "kind": "satellite",
+   "type": "tms",
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpg",
+   "maxz": 16,
+   "attribution": {
+    "text": "Sentinel-2 cloudless 2025 – EOX IT Services GmbH (obsahuje upravené dáta Copernicus Sentinel 2025)",
+    "url": "https://s2maps.eu/"
+   },
+   "license": "eox-nc",
+   "start": "2025",
+   "end": "2025",
+   "best": true,
+   "test": [
+    17.11,
+    48.15,
+    12
+   ]
+  },
+  {
+   "id": "eox-s2cloudless-2024",
+   "name": "Sentinel-2 cloudless 2024 (EOX)",
+   "kind": "satellite",
+   "type": "tms",
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg",
+   "maxz": 16,
+   "attribution": {
+    "text": "Sentinel-2 cloudless 2024 – EOX IT Services GmbH (obsahuje upravené dáta Copernicus Sentinel 2024)",
+    "url": "https://s2maps.eu/"
+   },
+   "license": "eox-nc",
+   "start": "2024",
+   "end": "2024",
+   "test": [
+    17.11,
+    48.15,
+    12
+   ]
+  },
+  {
+   "id": "eox-s2cloudless-2023",
+   "name": "Sentinel-2 cloudless 2023 (EOX)",
+   "kind": "satellite",
+   "type": "tms",
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpg",
+   "maxz": 16,
+   "attribution": {
+    "text": "Sentinel-2 cloudless 2023 – EOX IT Services GmbH (obsahuje upravené dáta Copernicus Sentinel 2023)",
+    "url": "https://s2maps.eu/"
+   },
+   "license": "eox-nc",
+   "start": "2023",
+   "end": "2023",
+   "test": [
+    17.11,
+    48.15,
+    12
+   ]
+  },
+  {
+   "id": "eox-s2cloudless-2016",
+   "name": "Sentinel-2 cloudless 2016 (EOX)",
+   "kind": "satellite",
+   "type": "tms",
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg",
+   "maxz": 16,
+   "attribution": {
+    "text": "Sentinel-2 cloudless 2016 – EOX IT Services GmbH (obsahuje upravené dáta Copernicus Sentinel 2016)",
+    "url": "https://s2maps.eu/"
+   },
+   "license": "eox-by",
+   "start": "2016",
+   "end": "2016",
+   "test": [
+    17.11,
+    48.15,
+    12
+   ]
+  },
+  {
+   "id": "esri-world-imagery",
+   "name": "Esri World Imagery",
+   "kind": "satellite",
+   "type": "tms",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+   "maxz": 19,
+   "attribution": {
+    "text": "Esri, Maxar, Earthstar Geographics a komunita používateľov GIS",
+    "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9"
+   },
+   "license": "esri",
+   "test": [
+    17.11,
+    48.15,
+    15
+   ]
+  },
+  {
+   "id": "gibs-bluemarble-ng",
+   "name": "Blue Marble Next Generation (NASA)",
+   "kind": "satellite",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "BlueMarble_NextGeneration",
+    "static": true,
+    "tms": "GoogleMapsCompatible_Level8",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – Blue Marble",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-modis-terra",
+   "name": "MODIS Terra – skutočné farby (denne)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+    "tms": "GoogleMapsCompatible_Level9",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – MODIS Terra",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-modis-aqua",
+   "name": "MODIS Aqua – skutočné farby (denne)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "MODIS_Aqua_CorrectedReflectance_TrueColor",
+    "tms": "GoogleMapsCompatible_Level9",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – MODIS Aqua",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-viirs-snpp",
+   "name": "VIIRS Suomi NPP – skutočné farby (denne)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+    "tms": "GoogleMapsCompatible_Level9",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – VIIRS SNPP",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-viirs-noaa20",
+   "name": "VIIRS NOAA-20 – skutočné farby (denne)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "VIIRS_NOAA20_CorrectedReflectance_TrueColor",
+    "tms": "GoogleMapsCompatible_Level9",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – VIIRS NOAA-20",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-viirs-noaa21",
+   "name": "VIIRS NOAA-21 – skutočné farby (denne)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "VIIRS_NOAA21_CorrectedReflectance_TrueColor",
+    "tms": "GoogleMapsCompatible_Level9",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – VIIRS NOAA-21",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-hls-s30",
+   "name": "HLS Sentinel-2 30 m (denne, NASA)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "HLS_S30_Nadir_BRDF_Adjusted_Reflectance",
+    "tms": "GoogleMapsCompatible_Level12",
+    "ext": "png"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – Harmonized Landsat Sentinel-2 (S30)",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    7
+   ]
+  },
+  {
+   "id": "gibs-hls-l30",
+   "name": "HLS Landsat 30 m (denne, NASA)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "HLS_L30_Nadir_BRDF_Adjusted_Reflectance",
+    "tms": "GoogleMapsCompatible_Level12",
+    "ext": "png"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – Harmonized Landsat Sentinel-2 (L30)",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    7
+   ]
+  },
+  {
+   "id": "eumetsat-mtg-truecolour",
+   "name": "MTG-I True Colour (Európa/Afrika, 10 min)",
+   "kind": "live",
+   "type": "wms",
+   "url": "https://view.eumetsat.int/geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=mtg_fd:rgb_truecolour&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE&TIME={time}",
+   "time": {
+    "source": "wms",
+    "caps": "https://view.eumetsat.int/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+    "layer": "mtg_fd:rgb_truecolour"
+   },
+   "bbox": [
+    -75,
+    -78,
+    75,
+    78
+   ],
+   "maxz": 8,
+   "attribution": {
+    "text": "EUMETSAT – MTG-I1 FCI",
+    "url": "https://view.eumetsat.int/"
+   },
+   "license": "eumetsat",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "eumetsat-mtg-geocolour",
+   "name": "MTG-I GeoColour (Európa/Afrika, 10 min)",
+   "kind": "live",
+   "type": "wms",
+   "url": "https://view.eumetsat.int/geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=mtg_fd:rgb_geocolour&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE&TIME={time}",
+   "time": {
+    "source": "wms",
+    "caps": "https://view.eumetsat.int/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+    "layer": "mtg_fd:rgb_geocolour"
+   },
+   "bbox": [
+    -75,
+    -78,
+    75,
+    78
+   ],
+   "maxz": 8,
+   "attribution": {
+    "text": "EUMETSAT – MTG-I1 FCI",
+    "url": "https://view.eumetsat.int/"
+   },
+   "license": "eumetsat",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "eumetsat-msg-natural",
+   "name": "MSG Natural Colour Enhanced (15 min)",
+   "kind": "live",
+   "type": "wms",
+   "url": "https://view.eumetsat.int/geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=msg_fes:rgb_naturalenhncd&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE&TIME={time}",
+   "time": {
+    "source": "wms",
+    "caps": "https://view.eumetsat.int/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+    "layer": "msg_fes:rgb_naturalenhncd"
+   },
+   "bbox": [
+    -75,
+    -78,
+    75,
+    78
+   ],
+   "maxz": 8,
+   "attribution": {
+    "text": "EUMETSAT – Meteosat SEVIRI",
+    "url": "https://view.eumetsat.int/"
+   },
+   "license": "eumetsat",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "eumetsat-msg-eview",
+   "name": "MSG HRV RGB Európa (15 min)",
+   "kind": "live",
+   "type": "wms",
+   "url": "https://view.eumetsat.int/geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=msg_fes:rgb_eview&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE&TIME={time}",
+   "time": {
+    "source": "wms",
+    "caps": "https://view.eumetsat.int/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+    "layer": "msg_fes:rgb_eview"
+   },
+   "bbox": [
+    -30,
+    25,
+    50,
+    72
+   ],
+   "maxz": 9,
+   "attribution": {
+    "text": "EUMETSAT – Meteosat SEVIRI HRV",
+    "url": "https://view.eumetsat.int/"
+   },
+   "license": "eumetsat",
+   "test": [
+    17,
+    48,
+    5
+   ]
+  },
+  {
+   "id": "gibs-goes-east-geocolor",
+   "name": "GOES-East GeoColor (Amerika, 10 min)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "GOES-East_ABI_GeoColor",
+    "tms": "GoogleMapsCompatible_Level7",
+    "ext": "png"
+   },
+   "bbox": [
+    -150,
+    -80,
+    0,
+    80
+   ],
+   "attribution": {
+    "text": "NASA EOSDIS GIBS / NOAA – GOES-East ABI",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    -75,
+    38,
+    4
+   ]
+  },
+  {
+   "id": "gibs-goes-west-geocolor",
+   "name": "GOES-West GeoColor (Pacifik, 10 min)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "GOES-West_ABI_GeoColor",
+    "tms": "GoogleMapsCompatible_Level7",
+    "ext": "png"
+   },
+   "bbox": [
+    -180,
+    -80,
+    -60,
+    80
+   ],
+   "attribution": {
+    "text": "NASA EOSDIS GIBS / NOAA – GOES-West ABI",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    -120,
+    38,
+    4
+   ]
+  },
+  {
+   "id": "gibs-himawari-vis",
+   "name": "Himawari AHI viditeľný kanál (Ázia, 10 min)",
+   "kind": "live",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "Himawari_AHI_Band3_Red_Visible_1km",
+    "tms": "GoogleMapsCompatible_Level7",
+    "ext": "png"
+   },
+   "bbox": [
+    70,
+    -80,
+    180,
+    80
+   ],
+   "attribution": {
+    "text": "NASA EOSDIS GIBS / JMA – Himawari AHI",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    139,
+    36,
+    4
+   ]
+  },
+  {
+   "id": "calc-terrarium-hypso",
+   "name": "Reliéf + hypsometria (výpočet v prehliadači)",
+   "kind": "relief",
+   "type": "terrarium",
+   "mode": "hypso",
+   "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+   "maxz": 15,
+   "attribution": {
+    "text": "Terrain Tiles (Mapzen/AWS): SRTM, GMTED, ETOPO1, EU-DEM a ďalšie",
+    "url": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+   },
+   "license": "aws",
+   "test": [
+    19.9,
+    49.17,
+    10
+   ]
+  },
+  {
+   "id": "calc-terrarium-slope",
+   "name": "Sklon svahov (výpočet v prehliadači)",
+   "kind": "relief",
+   "type": "terrarium",
+   "mode": "slope",
+   "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+   "maxz": 15,
+   "minz": 8,
+   "attribution": {
+    "text": "Terrain Tiles (Mapzen/AWS): SRTM, GMTED, ETOPO1, EU-DEM a ďalšie",
+    "url": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+   },
+   "license": "aws",
+   "test": [
+    19.9,
+    49.17,
+    10
+   ]
+  },
+  {
+   "id": "esri-world-hillshade",
+   "name": "Esri World Hillshade",
+   "kind": "relief",
+   "type": "tms",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}",
+   "maxz": 16,
+   "blend": "multiply",
+   "attribution": {
+    "text": "Esri, USGS, NGA, NASA, CGIAR, NLS, OS, NMA, Geodatastyrelsen, GSA, GSI a komunita GIS",
+    "url": "https://www.arcgis.com/home/item.html?id=1b243539f4514b6ba35e7d995890db1d"
+   },
+   "license": "esri",
+   "test": [
+    19.9,
+    49.17,
+    11
+   ]
+  },
+  {
+   "id": "esri-world-terrain-base",
+   "name": "Esri World Terrain Base",
+   "kind": "relief",
+   "type": "tms",
+   "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
+   "maxz": 13,
+   "attribution": {
+    "text": "Esri, USGS, NOAA",
+    "url": "https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931"
+   },
+   "license": "esri",
+   "test": [
+    19.9,
+    49.17,
+    8
+   ]
+  },
+  {
+   "id": "eox-terrain-light",
+   "name": "Terrain Light (EOX)",
+   "kind": "relief",
+   "type": "tms",
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpg",
+   "maxz": 16,
+   "attribution": {
+    "text": "Terrain Light – EOX IT Services GmbH; dáta © OpenStreetMap, SRTM, EU-DEM",
+    "url": "https://maps.eox.at/"
+   },
+   "license": "eox-terms",
+   "test": [
+    19.9,
+    49.17,
+    9
+   ]
+  },
+  {
+   "id": "eox-terrain",
+   "name": "Terrain (EOX)",
+   "kind": "relief",
+   "type": "tms",
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/terrain_3857/default/g/{z}/{y}/{x}.jpg",
+   "maxz": 16,
+   "attribution": {
+    "text": "Terrain – EOX IT Services GmbH; dáta © OpenStreetMap, SRTM, EU-DEM",
+    "url": "https://maps.eox.at/"
+   },
+   "license": "eox-terms",
+   "test": [
+    19.9,
+    49.17,
+    9
+   ]
+  },
+  {
+   "id": "gibs-aster-gdem-grey",
+   "name": "ASTER GDEM tieňovaný reliéf (NASA)",
+   "kind": "relief",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "ASTER_GDEM_Greyscale_Shaded_Relief",
+    "static": true,
+    "tms": "GoogleMapsCompatible_Level12",
+    "ext": "jpg"
+   },
+   "blend": "multiply",
+   "attribution": {
+    "text": "NASA/METI ASTER GDEM cez NASA GIBS",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    19.9,
+    49.17,
+    10
+   ]
+  },
+  {
+   "id": "gibs-aster-gdem-color",
+   "name": "ASTER GDEM farebný reliéf (NASA)",
+   "kind": "relief",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "ASTER_GDEM_Color_Shaded_Relief",
+    "static": true,
+    "tms": "GoogleMapsCompatible_Level12",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA/METI ASTER GDEM cez NASA GIBS",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    19.9,
+    49.17,
+    10
+   ]
+  },
+  {
+   "id": "gibs-bluemarble-relief-bathy",
+   "name": "Blue Marble reliéf + batymetria (NASA)",
+   "kind": "relief",
+   "type": "tms",
+   "time": {
+    "source": "gibs",
+    "layer": "BlueMarble_ShadedRelief_Bathymetry",
+    "static": true,
+    "tms": "GoogleMapsCompatible_Level8",
+    "ext": "jpg"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS – Blue Marble Shaded Relief",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17,
+    48,
+    4
+   ]
+  },
+  {
+   "id": "gebco-latest",
+   "name": "GEBCO batymetria a reliéf",
+   "kind": "thematic",
+   "type": "wms",
+   "url": "https://wms.gebco.net/mapserv?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=GEBCO_LATEST&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png",
+   "maxz": 10,
+   "attribution": {
+    "text": "GEBCO Compilation Group – GEBCO Grid",
+    "url": "https://www.gebco.net/"
+   },
+   "license": "gebco",
+   "test": [
+    17,
+    43,
+    5
+   ]
+  },
+  {
+   "id": "osm-standard",
+   "name": "OpenStreetMap",
+   "kind": "base",
+   "type": "tms",
+   "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+   "maxz": 19,
+   "attribution": {
+    "text": "© prispievatelia OpenStreetMap",
+    "url": "https://www.openstreetmap.org/copyright"
+   },
+   "license": "odbl",
+   "test": [
+    17.11,
+    48.15,
+    12
+   ]
+  },
+  {
+   "id": "opentopomap",
+   "name": "OpenTopoMap",
+   "kind": "base",
+   "type": "tms",
+   "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+   "subdomains": "abc",
+   "maxz": 17,
+   "attribution": {
+    "text": "© prispievatelia OpenStreetMap, SRTM | štýl © OpenTopoMap (CC BY-SA)",
+    "url": "https://opentopomap.org/about"
+   },
+   "license": "ccbysa",
+   "test": [
+    19.9,
+    49.17,
+    12
+   ]
+  },
+  {
+   "id": "osm-hot",
+   "name": "OSM Humanitarian",
+   "kind": "base",
+   "type": "tms",
+   "url": "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+   "subdomains": "abc",
+   "maxz": 19,
+   "attribution": {
+    "text": "© prispievatelia OpenStreetMap, štýl HOT / OSM France",
+    "url": "https://www.openstreetmap.org/copyright"
+   },
+   "license": "odbl",
+   "test": [
+    17.11,
+    48.15,
+    12
+   ]
+  },
+  {
+   "id": "eox-overlay-bright",
+   "name": "Popisy a hranice (EOX)",
+   "kind": "base",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://tiles.maps.eox.at/wmts/1.0.0/overlay_bright_3857/default/g/{z}/{y}/{x}.png",
+   "maxz": 16,
+   "attribution": {
+    "text": "Overlay – EOX IT Services GmbH; dáta © OpenStreetMap",
+    "url": "https://maps.eox.at/"
+   },
+   "license": "eox-terms",
+   "test": [
+    17.11,
+    48.15,
+    9
+   ]
+  },
+  {
+   "id": "gibs-reference-labels",
+   "name": "Popisy miest (NASA)",
+   "kind": "base",
+   "type": "tms",
+   "overlay": true,
+   "time": {
+    "source": "gibs",
+    "layer": "Reference_Labels_15m",
+    "static": true,
+    "tms": "GoogleMapsCompatible_Level13",
+    "ext": "png"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS; © OpenStreetMap",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    17.11,
+    48.15,
+    9
+   ],
+   "allow_blank": true
+  },
+  {
+   "id": "gibs-coastlines",
+   "name": "Pobrežia (NASA)",
+   "kind": "base",
+   "type": "tms",
+   "overlay": true,
+   "time": {
+    "source": "gibs",
+    "layer": "Coastlines_15m",
+    "static": true,
+    "tms": "GoogleMapsCompatible_Level13",
+    "ext": "png"
+   },
+   "attribution": {
+    "text": "NASA EOSDIS GIBS; © OpenStreetMap",
+    "url": "https://earthdata.nasa.gov/gibs"
+   },
+   "license": "nasa",
+   "test": [
+    14,
+    45,
+    7
+   ]
+  },
+  {
+   "id": "sk-zbgis-ortofoto",
+   "name": "ZBGIS Ortofotomozaika SR (WMS, ÚGKK SR)",
+   "kind": "ortho",
+   "cc": "SK",
+   "type": "wms",
+   "url": "https://zbgisws.skgeodesy.sk/zbgis_ortofoto_wms/service.svc/get?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/jpeg",
+   "maxz": 20,
+   "bbox": [
+    16.83,
+    47.73,
+    22.57,
+    49.62
+   ],
+   "best": true,
+   "attribution": {
+    "text": "© GKÚ Bratislava, NLC – ZBGIS Ortofotomozaika",
+    "url": "https://www.geoportal.sk/"
+   },
+   "license": "ccby",
+   "test": [
+    17.11,
+    48.15,
+    15
+   ]
+  },
+  {
+   "id": "sk-zbgis-dmr-shade",
+   "name": "DMR 5.0 – tieňovaný reliéf (WMS, ÚGKK SR)",
+   "kind": "relief",
+   "cc": "SK",
+   "type": "wms",
+   "url": "https://zbgisws.skgeodesy.sk/zbgis_dmr_wms/service.svc/get?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png",
+   "maxz": 19,
+   "bbox": [
+    16.83,
+    47.73,
+    22.57,
+    49.62
+   ],
+   "blend": "multiply",
+   "attribution": {
+    "text": "© GKÚ Bratislava – DMR 5.0",
+    "url": "https://www.geoportal.sk/"
+   },
+   "license": "ccby",
+   "test": [
+    19.9,
+    49.17,
+    14
+   ]
+  },
+  {
+   "id": "cz-cuzk-ortofoto-cache",
+   "name": "Ortofoto ČR (dlaždice, ČÚZK)",
+   "kind": "ortho",
+   "cc": "CZ",
+   "type": "tms",
+   "url": "https://ags.cuzk.gov.cz/arcgis1/rest/services/ORTOFOTO_WM/MapServer/tile/{z}/{y}/{x}",
+   "maxz": 20,
+   "bbox": [
+    12.09,
+    48.55,
+    18.86,
+    51.06
+   ],
+   "best": true,
+   "attribution": {
+    "text": "© ČÚZK – Ortofoto České republiky",
+    "url": "https://geoportal.cuzk.gov.cz/"
+   },
+   "license": "cuzk",
+   "test": [
+    14.42,
+    50.08,
+    15
+   ]
+  },
+  {
+   "id": "cz-cuzk-dmr5g-gov",
+   "name": "DMR 5G tieňovaný reliéf (ČÚZK)",
+   "kind": "relief",
+   "cc": "CZ",
+   "type": "wms",
+   "url": "https://ags.cuzk.gov.cz/arcgis2/services/dmr5g/ImageServer/WMSServer?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=dmr5g:GrayscaleHillshade&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png",
+   "maxz": 19,
+   "bbox": [
+    12.09,
+    48.55,
+    18.86,
+    51.06
+   ],
+   "blend": "multiply",
+   "attribution": {
+    "text": "© ČÚZK – DMR 5G",
+    "url": "https://geoportal.cuzk.gov.cz/"
+   },
+   "license": "cuzk",
+   "test": [
+    15.6,
+    50.7,
+    13
+   ]
+  },
+  {
+   "id": "de-by-relief",
+   "name": "Bayern – Geländerelief (kombiniert)",
+   "kind": "relief",
+   "cc": "DE",
+   "type": "wms",
+   "url": "https://geoservices.bayern.de/od/wms/dgm/v1/relief?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=by_relief_kombiniert&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png",
+   "maxz": 19,
+   "bbox": [
+    8.97,
+    47.27,
+    13.84,
+    50.57
+   ],
+   "blend": "multiply",
+   "attribution": {
+    "text": "© Bayerische Vermessungsverwaltung (CC BY 4.0)",
+    "url": "https://geodaten.bayern.de/opengeodata/"
+   },
+   "license": "ccby",
+   "test": [
+    11.0,
+    47.42,
+    13
+   ]
+  },
+  {
+   "id": "nl-ahn-dtm",
+   "name": "AHN DTM 0,5 m (PDOK)",
+   "kind": "relief",
+   "cc": "NL",
+   "type": "wms",
+   "url": "https://service.pdok.nl/rws/ahn/wms/v1_0?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=dtm_05m&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE",
+   "maxz": 20,
+   "bbox": [
+    3.2,
+    50.7,
+    7.3,
+    53.6
+   ],
+   "attribution": {
+    "text": "© AHN / Rijkswaterstaat, PDOK",
+    "url": "https://www.ahn.nl/"
+   },
+   "license": "pdok",
+   "test": [
+    5.9,
+    50.8,
+    13
+   ]
+  },
+  {
+   "id": "fr-ign-shadow",
+   "name": "Estompage RGE ALTI (IGN)",
+   "kind": "relief",
+   "cc": "FR",
+   "type": "tms",
+   "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW&STYLE=estompage_grayscale&TILEMATRIXSET=PM_0_15&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png",
+   "maxz": 15,
+   "bbox": [
+    -5.3,
+    41.3,
+    9.7,
+    51.2
+   ],
+   "blend": "multiply",
+   "attribution": {
+    "text": "© IGN – Géoplateforme",
+    "url": "https://geoservices.ign.fr/"
+   },
+   "license": "etalab",
+   "test": [
+    6.86,
+    45.83,
+    12
+   ]
+  },
+  {
+   "id": "jp-gsi-hillshade",
+   "name": "陰影起伏図 – tieňovaný reliéf (GSI)",
+   "kind": "relief",
+   "cc": "JP",
+   "type": "tms",
+   "url": "https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png",
+   "maxz": 16,
+   "bbox": [
+    122.9,
+    24.0,
+    153.99,
+    45.6
+   ],
+   "blend": "multiply",
+   "attribution": {
+    "text": "Geospatial Information Authority of Japan (GSI)",
+    "url": "https://maps.gsi.go.jp/development/ichiran.html"
+   },
+   "license": "gsi",
+   "test": [
+    138.73,
+    35.36,
+    12
+   ]
+  },
+  {
+   "id": "jp-gsi-relief",
+   "name": "色別標高図 – farebná výšková mapa (GSI)",
+   "kind": "relief",
+   "cc": "JP",
+   "type": "tms",
+   "url": "https://cyberjapandata.gsi.go.jp/xyz/relief/{z}/{x}/{y}.png",
+   "maxz": 15,
+   "bbox": [
+    122.9,
+    24.0,
+    153.99,
+    45.6
+   ],
+   "attribution": {
+    "text": "Geospatial Information Authority of Japan (GSI)",
+    "url": "https://maps.gsi.go.jp/development/ichiran.html"
+   },
+   "license": "gsi",
+   "test": [
+    138.73,
+    35.36,
+    10
+   ]
+  },
+  {
+   "id": "jp-gsi-seamlessphoto",
+   "name": "シームレス空中写真 – ortofoto (GSI)",
+   "kind": "ortho",
+   "cc": "JP",
+   "type": "tms",
+   "url": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+   "maxz": 18,
+   "bbox": [
+    122.9,
+    24.0,
+    153.99,
+    45.6
+   ],
+   "best": true,
+   "attribution": {
+    "text": "Geospatial Information Authority of Japan (GSI)",
+    "url": "https://maps.gsi.go.jp/development/ichiran.html"
+   },
+   "license": "gsi",
+   "test": [
+    139.76,
+    35.68,
+    15
+   ]
+  },
+  {
+   "id": "us-usgs-shaded-relief",
+   "name": "USGS Shaded Relief",
+   "kind": "relief",
+   "cc": "US",
+   "type": "tms",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/tile/{z}/{y}/{x}",
+   "maxz": 16,
+   "bbox": [
+    -179.9,
+    17.5,
+    -64.5,
+    71.5
+   ],
+   "blend": "multiply",
+   "attribution": {
+    "text": "USGS The National Map",
+    "url": "https://www.usgs.gov/programs/national-geospatial-program/national-map"
+   },
+   "license": "pd",
+   "test": [
+    -105.6,
+    39.6,
+    10
+   ]
+  },
+  {
+   "id": "us-usgs-imagery",
+   "name": "USGS Imagery Only",
+   "kind": "ortho",
+   "cc": "US",
+   "type": "tms",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
+   "maxz": 16,
+   "bbox": [
+    -179.9,
+    17.5,
+    -64.5,
+    71.5
+   ],
+   "attribution": {
+    "text": "USGS The National Map: Orthoimagery",
+    "url": "https://www.usgs.gov/programs/national-geospatial-program/national-map"
+   },
+   "license": "pd",
+   "test": [
+    -77.03,
+    38.89,
+    15
+   ]
+  },
+  {
+   "id": "tw-nlsc-photo2",
+   "name": "正射影像 – ortofoto (NLSC)",
+   "kind": "ortho",
+   "cc": "TW",
+   "type": "tms",
+   "url": "https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/GoogleMapsCompatible/{z}/{y}/{x}",
+   "maxz": 19,
+   "bbox": [
+    118.1,
+    21.8,
+    122.1,
+    26.4
+   ],
+   "best": true,
+   "attribution": {
+    "text": "© 內政部國土測繪中心 (NLSC)",
+    "url": "https://maps.nlsc.gov.tw/"
+   },
+   "license": "nlsc",
+   "test": [
+    121.56,
+    25.03,
+    15
+   ]
+  },
+  {
+   "id": "aero-metar",
+   "name": "METAR – aktuálne pozorovania (celý svet)",
+   "kind": "aero",
+   "group": "met",
+   "type": "vector",
+   "source": "metar",
+   "attribution": {
+    "text": "NOAA Aviation Weather Center",
+    "url": "https://aviationweather.gov/data/api/"
+   },
+   "license": "noaa",
+   "best": true
+  },
+  {
+   "id": "aero-taf",
+   "name": "TAF – predpovede platné v zvolenom čase",
+   "kind": "aero",
+   "group": "met",
+   "type": "vector",
+   "source": "taf",
+   "attribution": {
+    "text": "NOAA Aviation Weather Center",
+    "url": "https://aviationweather.gov/data/api/"
+   },
+   "license": "noaa"
+  },
+  {
+   "id": "aero-sigmet",
+   "name": "SIGMET, AIRMET, G-AIRMET",
+   "kind": "aero",
+   "group": "met",
+   "type": "vector",
+   "source": "sigmet",
+   "attribution": {
+    "text": "NOAA Aviation Weather Center (medzinárodné SIGMET + USA)",
+    "url": "https://aviationweather.gov/data/api/"
+   },
+   "license": "noaa"
+  },
+  {
+   "id": "aero-notam",
+   "name": "NOTAM platné v zvolenom čase",
+   "kind": "aero",
+   "group": "notam",
+   "type": "vector",
+   "source": "notam",
+   "attribution": {
+    "text": "FAA NOTAM Search (celý svet, aj medzinárodné NOTAM); stredy FIR: VATSpy Data Project, CC BY-SA 4.0",
+    "url": "https://notams.aim.faa.gov/notamSearch/"
+   },
+   "license": "faa-notam",
+   "best": true
+  },
+  {
+   "id": "aero-ad",
+   "name": "Letiská, dráhy a frekvencie",
+   "kind": "aero",
+   "group": "aip",
+   "type": "vector",
+   "source": "airports",
+   "sub": "ad",
+   "attribution": {
+    "text": "OurAirports",
+    "url": "https://ourairports.com/"
+   },
+   "license": "ourairports"
+  },
+  {
+   "id": "aero-nav",
+   "name": "Rádionavigačné zariadenia (VOR, DME, NDB)",
+   "kind": "aero",
+   "group": "aip",
+   "type": "vector",
+   "source": "airports",
+   "sub": "nav",
+   "attribution": {
+    "text": "OurAirports",
+    "url": "https://ourairports.com/"
+   },
+   "license": "ourairports"
+  },
+  {
+   "id": "aero-oaip-asp",
+   "name": "Vzdušné priestory (openAIP)",
+   "kind": "aero",
+   "group": "aip",
+   "type": "vector",
+   "source": "openaip",
+   "file": "openaip_airspaces.json",
+   "attribution": {
+    "text": "openAIP",
+    "url": "https://www.openaip.net/"
+   },
+   "license": "openaip"
+  },
+  {
+   "id": "aero-oaip-obs",
+   "name": "Letecké prekážky (openAIP)",
+   "kind": "aero",
+   "group": "aip",
+   "type": "vector",
+   "source": "openaip",
+   "file": "openaip_obstacles.json",
+   "attribution": {
+    "text": "openAIP",
+    "url": "https://www.openaip.net/"
+   },
+   "license": "openaip"
+  },
+  {
+   "id": "aero-oaip-rpp",
+   "name": "Hlásne body VFR (openAIP)",
+   "kind": "aero",
+   "group": "aip",
+   "type": "vector",
+   "source": "openaip",
+   "file": "openaip_reporting-points.json",
+   "attribution": {
+    "text": "openAIP",
+    "url": "https://www.openaip.net/"
+   },
+   "license": "openaip"
+  },
+  {
+   "id": "ofm-aero",
+   "name": "open flightmaps – letecká mapa VFR (aktuálny AIRAC)",
+   "kind": "aero",
+   "group": "chart",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://nwy-tiles-api.prod.newaydata.com/tiles/{z}/{x}/{y}.png?path=latest/aero/latest",
+   "maxz": 12,
+   "best": true,
+   "description": "21 regiónov: EB, ED, EF, EH, EK, EP, ES, FA, FY, LD, LF, LG, LH, LI, LJ, LK, LM, LO, LR, LS, LZ. Priestory, letiská, prekážky, frekvencie; vždy platný cyklus AIRAC. Dlaždice od z7 do z12.",
+   "attribution": {
+    "text": "© open flightmaps association",
+    "url": "https://www.openflightmaps.org/"
+   },
+   "license": "ofma",
+   "test": [
+    17.2,
+    48.2,
+    10
+   ],
+   "minz": 7
+  },
+  {
+   "id": "ch-bazl-icao",
+   "name": "Letecká mapa ICAO Švajčiarsko 1:500 000",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "CH",
+   "type": "tms",
+   "url": "https://wmts.geo.admin.ch/1.0.0/ch.bazl.luftfahrtkarten-icao/default/current/3857/{z}/{x}/{y}.png",
+   "maxz": 13,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© BAZL / swisstopo",
+    "url": "https://www.bazl.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.55,
+    47.45,
+    10
+   ]
+  },
+  {
+   "id": "ch-bazl-glider",
+   "name": "Plachtárska mapa Švajčiarsko",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "CH",
+   "type": "tms",
+   "url": "https://wmts.geo.admin.ch/1.0.0/ch.bazl.segelflugkarte/default/current/3857/{z}/{x}/{y}.png",
+   "maxz": 13,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© BAZL / swisstopo",
+    "url": "https://www.bazl.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.55,
+    47.45,
+    10
+   ]
+  },
+  {
+   "id": "ch-bazl-ctr",
+   "name": "Riadené okrsky CTR (BAZL)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "CH",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://wmts.geo.admin.ch/1.0.0/ch.bazl.luftraeume-kontrollzonen/default/current/3857/{z}/{x}/{y}.png",
+   "maxz": 17,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© BAZL",
+    "url": "https://www.bazl.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.55,
+    47.45,
+    10
+   ]
+  },
+  {
+   "id": "ch-bazl-tma",
+   "name": "Koncové riadené oblasti TMA (BAZL)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "CH",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://wmts.geo.admin.ch/1.0.0/ch.bazl.luftraeume-nahkontrollbezirke/default/current/3857/{z}/{x}/{y}.png",
+   "maxz": 17,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© BAZL",
+    "url": "https://www.bazl.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.55,
+    47.45,
+    10
+   ],
+   "allow_blank": true
+  },
+  {
+   "id": "ch-bazl-obstacles",
+   "name": "Letecké prekážky (BAZL)",
+   "kind": "aero",
+   "group": "aip",
+   "cc": "CH",
+   "type": "wms",
+   "overlay": true,
+   "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=ch.bazl.luftfahrthindernis&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE",
+   "minz": 10,
+   "maxz": 19,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© BAZL – Luftfahrthindernisse",
+    "url": "https://www.bazl.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.54,
+    47.38,
+    13
+   ]
+  },
+  {
+   "id": "ch-vbs-milair",
+   "name": "Mil Airspace Chart (VBS)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "CH",
+   "type": "tms",
+   "url": "https://wmts.geo.admin.ch/1.0.0/ch.vbs.milairspacechart/default/current/3857/{z}/{x}/{y}.png",
+   "maxz": 13,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© VBS / swisstopo",
+    "url": "https://www.vtg.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.55,
+    47.45,
+    10
+   ]
+  },
+  {
+   "id": "ch-bazl-uas",
+   "name": "Obmedzenia pre drony (BAZL)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "CH",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://wmts.geo.admin.ch/1.0.0/ch.bazl.einschraenkungen-drohnen/default/current/3857/{z}/{x}/{y}.png",
+   "maxz": 17,
+   "bbox": [
+    5.8,
+    45.7,
+    10.6,
+    47.9
+   ],
+   "attribution": {
+    "text": "© BAZL",
+    "url": "https://www.bazl.admin.ch/"
+   },
+   "license": "swiss-ogd",
+   "test": [
+    8.55,
+    47.45,
+    10
+   ]
+  },
+  {
+   "id": "de-dipul-aero",
+   "name": "Letiská, CTR a obmedzené priestory pre UAS (DIPUL)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "DE",
+   "type": "wms",
+   "overlay": true,
+   "url": "https://uas-betrieb.de/geoservices/dipul/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=dipul:flughaefen,dipul:flugplaetze,dipul:kontrollzonen,dipul:flugbeschraenkungsgebiete,dipul:modellflugplaetze&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE",
+   "maxz": 18,
+   "bbox": [
+    5.8,
+    47.2,
+    15.1,
+    55.1
+   ],
+   "attribution": {
+    "text": "Quelle Geodaten: DFS, BKG 2026",
+    "url": "https://www.dipul.de/"
+   },
+   "license": "dipul",
+   "test": [
+    8.57,
+    50.04,
+    10
+   ]
+  },
+  {
+   "id": "de-dipul-temp",
+   "name": "Dočasné obmedzenia prevádzky UAS (DIPUL)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "DE",
+   "type": "wms",
+   "overlay": true,
+   "url": "https://uas-betrieb.de/geoservices/dipul/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=dipul:temporaere_betriebseinschraenkungen&STYLES=&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&FORMAT=image/png&TRANSPARENT=TRUE",
+   "maxz": 18,
+   "bbox": [
+    5.8,
+    47.2,
+    15.1,
+    55.1
+   ],
+   "attribution": {
+    "text": "Quelle Geodaten: DFS, BKG 2026",
+    "url": "https://www.dipul.de/"
+   },
+   "license": "dipul",
+   "test": [
+    10.4,
+    51.1,
+    6
+   ],
+   "allow_blank": true
+  },
+  {
+   "id": "sk-lps-vfrm-aero",
+   "name": "VFR Manual SR – letecká vrstva (LPS)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "SK",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://gis.lps.sk/server/rest/services/VFRM/VFRM_cache/MapServer/tile/{z}/{y}/{x}",
+   "minz": 7,
+   "maxz": 17,
+   "bbox": [
+    16.6,
+    47.6,
+    22.7,
+    49.7
+   ],
+   "best": true,
+   "description": "Vzdušné priestory, letiská, prekážky, body a ďalšie prvky VFR Manual SR (GND–FL195) ako priehľadná vrstva nad ľubovoľným podkladom. Dlaždice z7–z17.",
+   "attribution": {
+    "text": "© LPS SR, š. p.",
+    "url": "https://gis.lps.sk/vfrm/index.html"
+   },
+   "license": "lps",
+   "test": [
+    17.21,
+    48.17,
+    10
+   ]
+  },
+  {
+   "id": "sk-lps-vfrm-base",
+   "name": "VFR Manual SR – podkladová mapa (LPS)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "SK",
+   "type": "tms",
+   "url": "https://gis.lps.sk/server/rest/services/basemaps/VFRM_basemap/MapServer/tile/{z}/{y}/{x}",
+   "minz": 7,
+   "maxz": 13,
+   "bbox": [
+    16.6,
+    47.6,
+    22.7,
+    49.7
+   ],
+   "description": "Topografický podklad VFR Manual SR; vhodný pod leteckú vrstvu LPS.",
+   "attribution": {
+    "text": "© LPS SR, š. p.",
+    "url": "https://gis.lps.sk/vfrm/index.html"
+   },
+   "license": "lps",
+   "test": [
+    19.5,
+    48.7,
+    10
+   ]
+  },
+  {
+   "id": "sk-lps-asp",
+   "name": "Vzdušné priestory SR (LPS)",
+   "kind": "aero",
+   "group": "aip",
+   "cc": "SK",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "lps-asp",
+   "urls": [
+    "https://gis.lps.sk/server/rest/services/Airspaces/FeatureServer/0"
+   ],
+   "minz": 6,
+   "bbox": [
+    16.6,
+    47.6,
+    22.7,
+    49.7
+   ],
+   "max": 1000,
+   "best": true,
+   "description": "274 priestorov s atribútmi AIXM (typ, trieda, hranice, prevádzková doba). Načítava sa podľa výrezu priamo zo servera LPS.",
+   "attribution": {
+    "text": "© LPS SR, š. p.",
+    "url": "https://gis.lps.sk/vfrm/index.html"
+   },
+   "license": "lps"
+  },
+  {
+   "id": "sk-lps-lara",
+   "name": "Rezervácie vzdušného priestoru SR (LARA)",
+   "kind": "aero",
+   "group": "notam",
+   "cc": "SK",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "lps-lara",
+   "urls": [
+    "https://gis.lps.sk/server/rest/services/Hosted/Reservation_(Public)/FeatureServer/0"
+   ],
+   "minz": 5,
+   "bbox": [
+    16.6,
+    47.6,
+    22.7,
+    49.7
+   ],
+   "max": 1000,
+   "best": true,
+   "description": "Rezervácie a aktivácie priestorov (TRA, TSA, D, R…) zo systému LARA; zobrazujú sa len tie platné vo zvolenom čase.",
+   "attribution": {
+    "text": "© LPS SR, š. p.",
+    "url": "https://gis.lps.sk/vfrm/index.html"
+   },
+   "license": "lps"
+  },
+  {
+   "id": "sk-lps-warn",
+   "name": "Výstrahy VFR Manual SR",
+   "kind": "aero",
+   "group": "notam",
+   "cc": "SK",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "lps-warn",
+   "urls": [
+    "https://gis.lps.sk/server/rest/services/VFRM/VFRM_dynamic/FeatureServer/0"
+   ],
+   "minz": 5,
+   "bbox": [
+    16.6,
+    47.6,
+    22.7,
+    49.7
+   ],
+   "max": 200,
+   "attribution": {
+    "text": "© LPS SR, š. p.",
+    "url": "https://gis.lps.sk/vfrm/index.html"
+   },
+   "license": "lps"
+  },
+  {
+   "id": "us-faa-sec",
+   "name": "VFR Sectional (FAA)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "US",
+   "type": "tms",
+   "url": "https://tiles.arcgis.com/tiles/ssFJjBXIUyZDrSYZ/arcgis/rest/services/VFR_Sectional/MapServer/tile/{z}/{y}/{x}",
+   "minz": 8,
+   "maxz": 12,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "best": true,
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/"
+   },
+   "license": "faa",
+   "test": [
+    -104.67,
+    39.86,
+    10
+   ],
+   "description": "Aktuálne VFR mapy 1:500 000 (USA). Dlaždice z8–z12."
+  },
+  {
+   "id": "us-faa-tac",
+   "name": "VFR Terminal Area Charts (FAA)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "US",
+   "type": "tms",
+   "url": "https://tiles.arcgis.com/tiles/ssFJjBXIUyZDrSYZ/arcgis/rest/services/VFR_Terminal/MapServer/tile/{z}/{y}/{x}",
+   "minz": 10,
+   "maxz": 12,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/"
+   },
+   "license": "faa",
+   "test": [
+    -104.67,
+    39.86,
+    10
+   ]
+  },
+  {
+   "id": "us-faa-ifrlo",
+   "name": "IFR Enroute Low (FAA)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "US",
+   "type": "tms",
+   "url": "https://tiles.arcgis.com/tiles/ssFJjBXIUyZDrSYZ/arcgis/rest/services/IFR_AreaLow/MapServer/tile/{z}/{y}/{x}",
+   "minz": 7,
+   "maxz": 12,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/"
+   },
+   "license": "faa",
+   "test": [
+    -104.67,
+    39.86,
+    10
+   ]
+  },
+  {
+   "id": "us-faa-ifrhi",
+   "name": "IFR Enroute High (FAA)",
+   "kind": "aero",
+   "group": "chart",
+   "cc": "US",
+   "type": "tms",
+   "url": "https://tiles.arcgis.com/tiles/ssFJjBXIUyZDrSYZ/arcgis/rest/services/IFR_High/MapServer/tile/{z}/{y}/{x}",
+   "minz": 5,
+   "maxz": 9,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/"
+   },
+   "license": "faa",
+   "test": [
+    -104.67,
+    39.86,
+    8
+   ]
+  },
+  {
+   "id": "us-asp-class",
+   "name": "Vzdušné priestory B, C, D, E (FAA)",
+   "kind": "aero",
+   "group": "aip",
+   "cc": "US",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "faa-class",
+   "urls": [
+    "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/Class_Airspace/FeatureServer/0"
+   ],
+   "minz": 7,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "max": 1000,
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://adds-faa.opendata.arcgis.com/"
+   },
+   "license": "faa"
+  },
+  {
+   "id": "us-asp-sua",
+   "name": "Priestory osobitného použitia – SUA (FAA)",
+   "kind": "aero",
+   "group": "aip",
+   "cc": "US",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "faa-sua",
+   "urls": [
+    "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/Special_Use_Airspace/FeatureServer/0"
+   ],
+   "minz": 6,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "max": 1000,
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://adds-faa.opendata.arcgis.com/"
+   },
+   "license": "faa"
+  },
+  {
+   "id": "us-dof",
+   "name": "Letecké prekážky – DOF (FAA)",
+   "kind": "aero",
+   "group": "aip",
+   "cc": "US",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "faa-dof",
+   "urls": [
+    "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/Digital_Obstacle_File/FeatureServer/0"
+   ],
+   "minz": 10,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "max": 2000,
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://adds-faa.opendata.arcgis.com/"
+   },
+   "license": "faa"
+  },
+  {
+   "id": "us-uasfm",
+   "name": "UAS Facility Maps – povolené výšky (FAA)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "US",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "faa-uasfm",
+   "urls": [
+    "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/FAA_UAS_FacilityMap_Data_V5/FeatureServer/0"
+   ],
+   "minz": 10,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "max": 2000,
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://adds-faa.opendata.arcgis.com/"
+   },
+   "license": "faa"
+  },
+  {
+   "id": "us-nsufr",
+   "name": "Obmedzenia UAS – národná bezpečnosť (FAA)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "US",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "generic",
+   "urls": [
+    "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/Part_Time_National_Security_UAS_Flight_Restrictions/FeatureServer/0"
+   ],
+   "minz": 6,
+   "bbox": [
+    -180,
+    15,
+    -64,
+    72
+   ],
+   "max": 1000,
+   "attribution": {
+    "text": "FAA Aeronautical Information Services",
+    "url": "https://adds-faa.opendata.arcgis.com/"
+   },
+   "license": "faa"
+  },
+  {
+   "id": "es-notam",
+   "name": "NOTAM Španielsko – geometrie (ENAIRE)",
+   "kind": "aero",
+   "group": "notam",
+   "cc": "ES",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "enaire-notam",
+   "urls": [
+    "https://servais.enaire.es/insigniads/rest/services/DINAMIC/Aero_SRV_NOTAM_data_v3/MapServer/1",
+    "https://servais.enaire.es/insigniads/rest/services/DINAMIC/Aero_SRV_NOTAM_data_v3/MapServer/0"
+   ],
+   "minz": 5,
+   "bbox": [
+    -18.5,
+    27.4,
+    4.6,
+    44.2
+   ],
+   "max": 2000,
+   "best": true,
+   "description": "Živé NOTAM s presnou geometriou (plochy a body) priamo z ENAIRE; filtrované podľa času B)–C).",
+   "attribution": {
+    "text": "ENAIRE",
+    "url": "https://insignia.enaire.es/"
+   },
+   "license": "enaire"
+  },
+  {
+   "id": "es-uas-notam",
+   "name": "NOTAM pre drony Španielsko (ENAIRE)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "ES",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "enaire-notam",
+   "urls": [
+    "https://servais.enaire.es/insigniads/rest/services/DINAMIC/UAS_NOTAM_SRV_DATA_V1/MapServer/1"
+   ],
+   "minz": 6,
+   "bbox": [
+    -18.5,
+    27.4,
+    4.6,
+    44.2
+   ],
+   "max": 1100,
+   "attribution": {
+    "text": "ENAIRE",
+    "url": "https://insignia.enaire.es/"
+   },
+   "license": "enaire"
+  },
+  {
+   "id": "es-uas-zg",
+   "name": "Geografické zóny UAS Španielsko (ENAIRE)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "ES",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "enaire-zg",
+   "urls": [
+    "https://servais.enaire.es/insigniads/rest/services/NSF_SRV/SRV_UAS_ZG_data_V2/MapServer/2"
+   ],
+   "minz": 9,
+   "bbox": [
+    -18.5,
+    27.4,
+    4.6,
+    44.2
+   ],
+   "max": 1000,
+   "attribution": {
+    "text": "ENAIRE",
+    "url": "https://insignia.enaire.es/"
+   },
+   "license": "enaire"
+  },
+  {
+   "id": "fr-uas",
+   "name": "Obmedzenia pre drony Francúzsko (Géoplateforme)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "FR",
+   "type": "tms",
+   "overlay": true,
+   "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=TRANSPORTS.DRONES.RESTRICTIONS&STYLE=normal&TILEMATRIXSET=PM_3_15&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png",
+   "minz": 3,
+   "maxz": 15,
+   "bbox": [
+    -5.5,
+    41.2,
+    9.8,
+    51.2
+   ],
+   "attribution": {
+    "text": "DGAC / IGN – Géoplateforme",
+    "url": "https://cartes.gouv.fr/"
+   },
+   "license": "etalab",
+   "test": [
+    2.55,
+    49.0,
+    10
+   ],
+   "description": "Restrictions UAS catégorie Ouverte et aéromodélisme."
+  },
+  {
+   "id": "si-uas",
+   "name": "Geografické zóny UAS Slovinsko (CAA)",
+   "kind": "aero",
+   "group": "uas",
+   "cc": "SI",
+   "type": "vector",
+   "source": "arcgis",
+   "fmt": "si-uas",
+   "urls": [
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/0",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/1",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/2",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/3",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/4",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/5",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/6",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/7",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/8",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/9",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/10",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/11",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/UAS_GEO_ZONES___March_2022_WFL1/FeatureServer/12",
+    "https://services6.arcgis.com/1F2lR3M9nMUYDj5l/arcgis/rest/services/CTR_WGS_24/FeatureServer/0"
+   ],
+   "labels": [
+    "Jadrová elektráreň Krško – zákaz",
+    "Heliporty – 1 NM",
+    "Heliporty vo verejnom záujme",
+    "Letiská",
+    "Letiská – zákaz",
+    "CTR – povolené do 50 m",
+    "Prístav Koper",
+    "Uhoľná baňa Velenje",
+    "Tepelná elektráreň Šoštanj",
+    "Športové obmedzenia",
+    "Nebezpečné priestory (D)",
+    "Obmedzené priestory (R)",
+    "Triglavský národný park",
+    "CTR"
+   ],
+   "minz": 8,
+   "bbox": [
+    13.3,
+    45.4,
+    16.7,
+    46.9
+   ],
+   "max": 1000,
+   "attribution": {
+    "text": "CAA Slovenija",
+    "url": "https://www.caa.si/"
+   },
+   "license": "caa-si"
+  },
+  {
+   "id": "met-rainviewer",
+   "name": "Zrážkový radar – mozaika (RainViewer)",
+   "kind": "aero",
+   "group": "met",
+   "type": "rainviewer",
+   "overlay": true,
+   "maxz": 7,
+   "description": "Posledné 2 hodiny po 10 minútach; zobrazí sa snímka najbližšia zvolenému času (budúcnosť = posledná). Natívne do z7.",
+   "attribution": {
+    "text": "RainViewer",
+    "url": "https://www.rainviewer.com/"
+   },
+   "license": "rainviewer"
+  }
+ ]
+}

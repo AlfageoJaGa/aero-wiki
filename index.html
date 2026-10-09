@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AERO-wiki</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230b4f8a%22/%3E%3Cpath d=%22M16 4l2 9 10 4v2l-10-2-1 6 3 2v2l-4-1-4 1v-2l3-2-1-6-10 2v-2l10-4z%22 fill=%22%23fff%22/%3E%3C/svg%3E">
+<meta name="description" content="Letecké údaje (NOTAM, METAR, TAF, SIGMET, priestory, rezervácie, drony), knižnica voľných leteckých zdrojov sveta a voľné mapové podklady. Overuje a aktualizuje sa každú hodinu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="panel" aria-label="Vrstvy">
+    <button id="sheet-handle" type="button" aria-expanded="true" aria-controls="panel-body">
+      <span class="grip" aria-hidden="true"></span><span class="sr">Zobraziť alebo skryť panel</span>
+    </button>
+    <header class="brand">
+      <h1>AERO-wiki</h1>
+      <p class="tag">Otvorená wiki leteckých zdrojov sveta – NOTAM, počasie, priestory, drony, AIP a mapy na jednom mieste</p>
+    </header>
+
+    <section class="health" aria-live="polite">
+      <div class="health-row">
+        <span class="hc"><i class="dot ok"></i><b id="n-ok">–</b> dostupné</span>
+        <span class="hc"><i class="dot warn"></i><b id="n-warn">–</b> varovanie</span>
+        <span class="hc"><i class="dot down"></i><b id="n-down">–</b> nedostupné</span>
+      </div>
+      <div class="health-row mono small">
+        <span>Katalóg <b id="cat-time">–</b></span>
+        <span>ďalšia kontrola <b id="cat-next">–</b></span>
+        <button id="btn-refresh" class="link" type="button">Obnoviť teraz</button>
+      </div>
+    </section>
+
+    <div id="panel-body">
+      <nav class="tabs" role="tablist">
+        <button role="tab" id="tab-aero" aria-selected="true" data-tab="aero">Letectvo <span class="cnt" id="cnt-aero"></span></button>
+        <button role="tab" id="tab-library" aria-selected="false" data-tab="library">Knižnica <span class="cnt" id="cnt-lib"></span></button>
+        <button role="tab" id="tab-base" aria-selected="false" data-tab="base">Podklady</button>
+        <button role="tab" id="tab-active" aria-selected="false" data-tab="active">Na mape <span class="cnt" id="cnt-active">0</span></button>
+      </nav>
+
+      <div class="filters" id="filters" hidden>
+        <div class="seg" role="group" aria-label="Rozsah podkladov">
+          <button type="button" data-sub="countries" aria-pressed="true">Krajiny <span class="cnt" id="seg-n-countries"></span></button>
+          <button type="button" data-sub="global" aria-pressed="false">Celý svet <span class="cnt" id="seg-n-global"></span></button>
+        </div>
+        <input id="q" type="search" placeholder="Hľadať krajinu, vrstvu, rok…" autocomplete="off" aria-label="Hľadať">
+        <div class="chips" id="kind-chips" role="group" aria-label="Typ vrstvy"></div>
+        <div class="toggles">
+          <label><input type="checkbox" id="f-hide-down" checked> Skryť nedostupné</label>
+          <label><input type="checkbox" id="f-open"> Len otvorené licencie</label>
+        </div>
+      </div>
+
+      <div id="list" class="list" role="tabpanel"></div>
+    </div>
+    <footer class="foot small">
+      Zdroje katalógu: <a href="https://github.com/osmlab/editor-layer-index" target="_blank" rel="noopener">OSM Editor Layer Index</a>,
+      <a href="https://earthdata.nasa.gov/gibs" target="_blank" rel="noopener">NASA GIBS</a>,
+      <a href="https://view.eumetsat.int/" target="_blank" rel="noopener">EUMETView</a> a kurátorský zoznam.
+      Letecké údaje: <a href="https://aviationweather.gov/" target="_blank" rel="noopener">NOAA AWC</a>,
+      <a href="https://notams.aim.faa.gov/notamSearch/" target="_blank" rel="noopener">FAA NOTAM Search</a>,
+      <a href="https://ourairports.com/" target="_blank" rel="noopener">OurAirports</a>,
+      <a href="https://github.com/vatsimnetwork/vatspy-data-project" target="_blank" rel="noopener">VATSpy Data Project</a> (zoznam a stredy FIR, CC BY-SA 4.0),
+      <a href="https://www.openflightmaps.org/" target="_blank" rel="noopener">open flightmaps</a>, LPS SR, FAA, ENAIRE, BAZL, DIPUL, Géoplateforme, CAA SI, RainViewer.
+      Knižnica: <a href="https://erau.libguides.com/uas/electronic-aips-country" target="_blank" rel="noopener">ERAU – eAIP podľa štátov</a> a kurátorský zoznam.
+      Licencie a podmienky sú uvedené pri každej vrstve.
+    </footer>
+  </aside>
+
+  <main id="map" aria-label="Mapa"></main>
+
+  <div id="legend" class="legend" hidden></div>
+  <div id="readout" class="readout mono small" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <div id="info" class="info" hidden role="dialog" aria-modal="false" aria-labelledby="info-title">
+    <button class="icon close" id="info-close" type="button" aria-label="Zavrieť"></button>
+    <div id="info-body"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data/catalog.js"></script>
+<script src="data/library.js"></script>
+<script src="aero.js"></script>
+<script src="library.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "_info": "Nastavenie leteckých údajov pre scripts/build_aero.py. Oblasť NOTAM sa dá rozšíriť doplnením FIR a krajín (ISO kódy).",
+  "notam": {
+    "_info": "NOTAM z FAA NOTAM Search (celý svet). 'firs', 'aerodrome_countries' a 'extra_locations' = priorita, obnovuje sa každú hodinu. 'world' = ostatné FIR (zoznam VATSpy + kódy FIR z Q-riadkov a A) za posledných 90 dní) a letiská s ICAO kódom (OurAirports); obnovujú sa postupne od najdlhšie neobnovených v rozpočte 'budget' (≈ 2 500 požiadaviek na celý svet → pri 600/h ≈ 4–5 h). Neplatné kódy sa vyradia na 30 dní. Dlaždice: základ 'tile_deg', husté sa delia na štvrtiny až 'tile_levels' úrovní, kým majú najviac 'tile_max_features' správ.",
+    "firs": [
+      "LZBB",
+      "LKAA",
+      "LOVV",
+      "LHCC",
+      "EPWW"
+    ],
+    "aerodrome_countries": [
+      "SK",
+      "CZ",
+      "AT",
+      "HU",
+      "PL"
+    ],
+    "extra_locations": [],
+    "world": {
+      "enabled": true,
+      "fir_source": "https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/VATSpy.dat",
+      "learn_firs": true,
+      "aerodrome_types": [
+        "large_airport",
+        "medium_airport",
+        "small_airport"
+      ],
+      "fir_boundaries": "https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson"
+    },
+    "budget": {
+      "max_requests": 600,
+      "max_seconds": 900
+    },
+    "tile_deg": 10,
+    "tile_max_features": 1500,
+    "tile_levels": 4,
+    "batch": 25,
+    "max_pages_per_batch": 80,
+    "pause_s": 1.0
+  },
+  "openaip": {
+    "_info": "Voliteľné. Potrebný bezplatný kľúč z openaip.net v premennej prostredia OPENAIP_API_KEY (GitHub: Settings → Secrets → Actions).",
+    "countries": [
+      "SK",
+      "CZ",
+      "AT",
+      "HU",
+      "PL",
+      "DE",
+      "CH"
+    ],
+    "types": [
+      "airspaces",
+      "obstacles",
+      "reporting-points"
+    ]
+  },
+  "airports": {
+    "split_threshold": 3000
+  }
+}
